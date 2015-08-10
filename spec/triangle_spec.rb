@@ -29,5 +29,11 @@ describe(Triangle) do
       test_triangle = Triangle.new(4,3,2)
       expect(test_triangle.triangle_type()).to(eq("scalene"))
     end
+
+    it('returns error if not a triangle') do
+      test_triangle = Triangle.new(6,3,2)
+      expect(test_triangle.triangle_type()).to(eq("error"))
+    end
+
   end
 end

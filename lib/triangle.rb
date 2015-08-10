@@ -14,12 +14,16 @@ class Triangle
   end
 
   define_method(:triangle_type) do
-    if @base == @side_one && @side_two == @base
-      return "equilateral"
-    elsif @base == @side_one || @side_two == @base
-      return "isosceles"
-    elsif @base != @side_one && @side_two != @base && @side_one != @side_two
-      return "scalene"
+    if triangle? == true
+      if @base == @side_one && @side_two == @base
+        "equilateral"
+      elsif @base == @side_one || @side_two == @base
+        "isosceles"
+      elsif @base != @side_one && @side_two != @base && @side_one != @side_two
+        "scalene"
+      end
+    else
+      "error"
     end
   end
 end
