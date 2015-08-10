@@ -16,6 +16,8 @@ class Triangle
   define_method(:triangle_type) do
     if @base == @side_one && @side_two == @base
       return "equilateral"
+    elsif @base == @side_one || @side_two == @base
+      return "isosceles"
     end
   end
 end

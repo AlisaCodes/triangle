@@ -19,5 +19,10 @@ describe(Triangle) do
       test_triangle = Triangle.new(4,4,4)
       expect(test_triangle.triangle_type()).to(eq("equilateral"))
     end
+
+    it('returns isosceles if two sides of the triangle are equal and the third side is not') do
+      test_triangle = Triangle.new(4,4,2)
+      expect(test_triangle.triangle_type()).to(eq("isosceles"))
+    end
   end
 end
