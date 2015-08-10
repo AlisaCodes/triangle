@@ -12,4 +12,10 @@ class Triangle
       false
     end
   end
+
+  define_method(:triangle_type) do
+    if @base == @side_one && @side_two == @base
+      return "equilateral"
+    end
+  end
 end
