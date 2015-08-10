@@ -6,6 +6,10 @@ class Triangle
   end
 
   define_method(:triangle?) do
-    false
+    if @base.+(@side_one) >= @side_two && @base.+(@side_two) >= @side_one && @side_one.+(@side_two) >= @base
+      true
+    else
+      false
+    end
   end
 end
