@@ -18,6 +18,8 @@ class Triangle
       return "equilateral"
     elsif @base == @side_one || @side_two == @base
       return "isosceles"
+    elsif @base != @side_one && @side_two != @base && @side_one != @side_two
+      return "scalene"
     end
   end
 end
