@@ -6,7 +6,7 @@
 
 ## Description
 
-_This custom class builds a triangle. It accepts three side lengths. Has method to determine if actually a triangle. Has method to determine type of triangle._
+_This app accepts three side lengths. Has method to determine if actually a triangle. Has method to determine type of triangle._
 
 ## Setup
 
@@ -15,7 +15,7 @@ _This custom class builds a triangle. It accepts three side lengths. Has method 
 
 ## Technologies Used
 
-_Ruby and Rspec_
+_Ruby, Rspec, Sinatra, Capybara_
 
 ### Legal
 

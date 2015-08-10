@@ -12,6 +12,6 @@ describe('the triangle execution path', {:type => :feature}) do
    fill_in('side_two', :with => '4')
 
    click_button('Submit')
-   expect(page).to have_content('The side lengths that you provided would make a equilateral triangle')
+   expect(page).to have_content('The side lengths that you provided would make a equilateral triangle.')
  end
 end
